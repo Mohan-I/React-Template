@@ -3,6 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Faqs from '../components/frequent/faqs';
 import Footer from '../components/common/footer';
+import Blog from '../components/frequent/blog';
 
 const landing = () => {
   return (
@@ -130,6 +131,10 @@ const landing = () => {
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
 
+<br />
+
+<Blog />
+
 
 <div className="row px-5">
 <br />
@@ -145,8 +150,9 @@ const landing = () => {
   <div className="col-md-6 col-sm-12">
   <Faqs />
   </div>
+ 
 </div>
-
+<br /> <br />
 <Footer />
 
     </>
