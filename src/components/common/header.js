@@ -8,6 +8,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
 import logo from '../../assets/img/logo.png';
+import Signup from './signcanvs'
 
 function NavScrollExample() {
   return (
@@ -24,7 +25,8 @@ function NavScrollExample() {
           >
             <NavLink href="#action1" className="nav-content" to="/" >Home</NavLink>
             <NavLink href="#action2" className="nav-content" to="/about">About</NavLink>
-            <NavLink href="#action2" className="nav-content" to="/courses">Courses</NavLink>
+            <NavLink href="#action3" className="nav-content" to="/courses">Courses</NavLink>
+            <NavLink href="#action4" className="nav-content" to="/pricing">Pricing</NavLink>
             <NavDropdown title="Language" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">English (US)</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -45,15 +47,7 @@ function NavScrollExample() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
+          <Signup />
         </Navbar.Collapse>
       </Container>
     </Navbar>

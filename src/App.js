@@ -4,6 +4,8 @@ import Header from './components/common/header';
 import Home from './pages/landing.js';
 import About from './pages/about.js';
 import Courses from './pages/courses.js';
+import Pricing from './pages/pricing.js';
+import Checkout from './pages/checkout.js';
 
 
 function App() {
@@ -16,6 +18,8 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/courses" element={<Courses/>}/>
+        <Route path="/pricing" element={<Pricing/>}/>
+        <Route path="/checkout" element={<Checkout/>}/>
       </Routes>
       </BrowserRouter> 
     </div>
