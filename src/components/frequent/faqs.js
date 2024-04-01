@@ -4,7 +4,7 @@ function AllCollapseExample() {
   return (
     <Accordion>
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Accordion Item #1</Accordion.Header>
+        <Accordion.Header className='txcolor'>Accordion Item #1</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -16,7 +16,7 @@ function AllCollapseExample() {
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="1">
-        <Accordion.Header>Accordion Item #2</Accordion.Header>
+        <Accordion.Header className='txcolor'>Accordion Item #2</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -28,7 +28,7 @@ function AllCollapseExample() {
         </Accordion.Body>
       </Accordion.Item>
         <Accordion.Item eventKey="3">
-        <Accordion.Header>Accordion Item #3</Accordion.Header>
+        <Accordion.Header className='text-primary'>Accordion Item #3</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -40,7 +40,7 @@ function AllCollapseExample() {
         </Accordion.Body>
         </Accordion.Item>
         <Accordion.Item eventKey="4">
-        <Accordion.Header>Accordion Item #4</Accordion.Header>
+        <Accordion.Header className='txcolor'>Accordion Item #4</Accordion.Header>
         <Accordion.Body>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
