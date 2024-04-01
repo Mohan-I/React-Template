@@ -4,6 +4,8 @@ import Header from './components/common/header';
 import Home from './pages/landing.js';
 import About from './pages/about.js';
 import Courses from './pages/courses.js';
+import Login from './pages/login.jsx';
+import Signup from './pages/signup.jsx';
 
 
 function App() {
@@ -16,8 +18,12 @@ function App() {
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<About/>}/>
         <Route path="/courses" element={<Courses/>}/>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/signup" element={<Signup/>}/>
+
       </Routes>
       </BrowserRouter> 
+      
     </div>
   );
 }

@@ -10,6 +10,8 @@ import { NavLink } from 'react-router-dom';
 
 function NavScrollExample() {
   return (
+    <div>
+      
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#">ChessboardBattles</Navbar.Brand>
@@ -23,6 +25,8 @@ function NavScrollExample() {
             <NavLink href="#action1" className="nav-content" to="/" >Home</NavLink>
             <NavLink href="#action2" className="nav-content" to="/about">About</NavLink>
             <NavLink href="#action2" className="nav-content" to="/courses">Courses</NavLink>
+            <NavLink href="#action2" className="nav-content" to="/login">Login</NavLink>
+
             <NavDropdown title="Language" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">English (US)</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -50,11 +54,12 @@ function NavScrollExample() {
               className="me-2"
               aria-label="Search"
             />
-            <Button variant="outline-success">Search</Button>
+            <Button variant="outline-primary">Search</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </div>
   );
 }
 
