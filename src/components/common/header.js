@@ -7,6 +7,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { NavLink } from 'react-router-dom';
+import logo from '../../assets/img/logo.png';
+import Signup from './signcanvs'
 
 function NavScrollExample() {
   return (
@@ -14,7 +16,10 @@ function NavScrollExample() {
       
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
-        <Navbar.Brand href="#">ChessboardBattles</Navbar.Brand>
+
+      <img src={logo} width="5%"/>
+        <Navbar.Brand href="#">ChessBoard Battles</Navbar.Brand>
+
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -24,8 +29,12 @@ function NavScrollExample() {
           >
             <NavLink href="#action1" className="nav-content" to="/" >Home</NavLink>
             <NavLink href="#action2" className="nav-content" to="/about">About</NavLink>
-            <NavLink href="#action2" className="nav-content" to="/courses">Courses</NavLink>
+
             <NavLink href="#action2" className="nav-content" to="/login">Login</NavLink>
+
+
+            <NavLink href="#action3" className="nav-content" to="/courses">Courses</NavLink>
+            <NavLink href="#action4" className="nav-content" to="/pricing">Pricing</NavLink>
 
             <NavDropdown title="Language" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">English (US)</NavDropdown.Item>
@@ -47,6 +56,7 @@ function NavScrollExample() {
               </NavDropdown.Item>
             </NavDropdown>
           </Nav>
+
           <Form className="d-flex">
             <Form.Control
               type="search"
@@ -56,6 +66,9 @@ function NavScrollExample() {
             />
             <Button variant="outline-primary">Search</Button>
           </Form>
+
+          <Signup />
+
         </Navbar.Collapse>
       </Container>
     </Navbar>

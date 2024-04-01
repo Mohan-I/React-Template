@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Faqs from '../components/frequent/faqs';
 import Footer from '../components/common/footer';
+import Blog from '../components/frequent/blog';
+import hero from '../assets/img/banner.png'
 
 const landing = () => {
   return (
@@ -31,13 +33,15 @@ const landing = () => {
         </button>
       </div>
     </div>
-    <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+    <div className="col-lg-4 offset-lg-1 p-0 overflow-hidden">
+      <center>
       <img
         className="rounded-lg-3"
-        src="bootstrap-docs.png"
+        src={hero}
         alt=""
-        width={720}
+        width="60%"
       />
+      </center>
     </div>
   </div>
 </div>
@@ -130,6 +134,10 @@ const landing = () => {
       <Card.Footer className="text-muted">2 days ago</Card.Footer>
     </Card>
 
+<br />
+
+<Blog />
+
 
 <div className="row px-5">
 <br />
@@ -145,8 +153,9 @@ const landing = () => {
   <div className="col-md-6 col-sm-12">
   <Faqs />
   </div>
+ 
 </div>
-
+<br /> <br />
 <Footer />
 
     </>
